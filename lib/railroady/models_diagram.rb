@@ -38,7 +38,7 @@ class ModelsDiagram < AppDiagram
   end
 
   def get_engine_files
-    engines.collect { |engine| Dir.glob("#{engine.root.to_s}/*/app/models/**/*.rb")}.flatten
+    engines.collect { |engine| Dir.glob("#{engine.root.to_s}/**/app/models/**/*.rb")}.flatten
   end
 
 
